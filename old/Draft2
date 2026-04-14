@@ -1,0 +1,25 @@
+-- ALTER TABLE item_types
+-- ADD COLUMN category_id INT;
+-- ALTER TABLE item_types
+-- ADD CONSTRAINT fk_type_category
+-- FOREIGN KEY (category_id) REFERENCES item_categories(id);
+-- ALTER TABLE items DROP CONSTRAINT f_key_type;
+-- ALTER TABLE items DROP COLUMN type_id;
+
+
+-- ALTER TABLE items
+-- ADD COLUMN type_id INT;
+
+
+-- ALTER TABLE items
+-- ADD CONSTRAINT f_key_type
+-- FOREIGN KEY (type_id) REFERENCES item_types(id);
+
+
+-- ALTER TABLE item_types
+-- DROP CONSTRAINT fk_type_category;
+
+-- ALTER TABLE item_types
+-- DROP COLUMN category_id;
+
+

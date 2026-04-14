@@ -1,0 +1,75 @@
+-- INSERT INTO item_categories (title, description) VALUES
+-- ('Electronics', 'Smartphones, TV and electronics'),
+-- ('Household appliances', 'Appliances for home use'),
+-- ('Computers', 'Laptops, tablets and computer peripherals'),
+-- ('Sports goods', 'Equipment for sports'),
+-- ('Plumbing', 'Plumbing and repairs');
+
+-- INSERT INTO item_types (title) VALUES
+-- ('Smartphone'),
+-- ('Laptop'),
+-- ('TV'),
+-- ('Bicycle'),
+-- ('Smartwatch'),
+-- ('Camera'),
+-- ('Printer'),
+-- ('Gaming Console'),
+-- ('Washer'),
+-- ('Dishwasher');
+
+-- INSERT INTO brands (title) VALUES
+-- ('Apple'),
+-- ('Samsung'),
+-- ('Dell'),
+-- ('LG'),
+-- ('Sony'),
+-- ('Microsoft'),
+-- ('HP'),
+-- ('Lenovo'),
+-- ('Xiaomi'),
+-- ('Bosch'),
+-- ('Panasonic'),
+-- ('Philips'),
+-- ('Canon'),
+-- ('Nokia');
+
+-- INSERT INTO customers (name_customers, email) VALUES
+-- ('Ivan Ivanov', 'ivan@example.com'),
+-- ('Petro Petrov', 'petrov@example.com'),
+-- ('Michael Michaelov', 'michael@example.com'),
+-- ('Maryna  Marynina', 'marynina@example.com'),
+-- ('Olha Olhivna', 'olhivna@example.com');
+
+-- INSERT INTO stores (title, description) VALUES
+-- ('Main Store', 'Central store'),
+-- ('Kyiv Store', 'Store in Kyiv'),
+-- ('Lviv Store', 'Store in Lviv'),
+-- ('Odessa Store', 'Store in Odessa'),
+-- ('Kharkiv Store', 'Store in Kharkiv');
+
+-- INSERT INTO models (title, brand_id, description) VALUES
+-- ('iPhone 15', (SELECT id FROM brands WHERE title = 'Apple'), 'Smartphone'),
+-- ('MacBook Air M2', (SELECT id FROM brands WHERE title = 'Apple'), 'Laptop'),
+-- ('Galaxy S24', (SELECT id FROM brands WHERE title = 'Samsung'), 'Smartphone'),
+-- ('Neo QLED 8K', (SELECT id FROM brands WHERE title = 'Samsung'), 'TV'),
+-- ('XPS 13', (SELECT id FROM brands WHERE title = 'Dell'), 'Laptop'),
+-- ('Alienware Aurora', (SELECT id FROM brands WHERE title = 'Dell'), 'Laptop'),
+-- ('OLED C3', (SELECT id FROM brands WHERE title = 'LG'), 'TV'),
+-- ('Gram 16', (SELECT id FROM brands WHERE title = 'LG'), 'Laptop'),
+-- ('PlayStation 5', (SELECT id FROM brands WHERE title = 'Sony'), 'Gaming Console'),
+-- ('Sony A7 IV', (SELECT id FROM brands WHERE title = 'Sony'), 'Camera'),
+-- ('Surface Pro', (SELECT id FROM brands WHERE title = 'Microsoft'), 'Laptop'),
+-- ('Xbox Series X', (SELECT id FROM brands WHERE title = 'Microsoft'), 'Gaming Console'),
+-- ('Spectre x360', (SELECT id FROM brands WHERE title = 'HP'), 'Laptop'),
+-- ('Smart Tank 700', (SELECT id FROM brands WHERE title = 'HP'), 'Printer'),
+-- ('ThinkPad X1 Carbon', (SELECT id FROM brands WHERE title = 'Lenovo'), 'Laptop'),
+-- ('Legion Go', (SELECT id FROM brands WHERE title = 'Lenovo'), 'Laptop'),
+-- ('Xiaomi 14', (SELECT id FROM brands WHERE title = 'Xiaomi'), 'Smartphone'),
+-- ('Mi Watch', (SELECT id FROM brands WHERE title = 'Xiaomi'), 'Smartwatch'),
+-- ('Serie 6 Washer', (SELECT id FROM brands WHERE title = 'Bosch'), 'Washer'),
+-- ('Smart Dishwasher', (SELECT id FROM brands WHERE title = 'Bosch'), 'Dishwasher'),
+-- ('Lumix GH6', (SELECT id FROM brands WHERE title = 'Panasonic'), 'Camera'),
+-- ('Panasonic Smart TV', (SELECT id FROM brands WHERE title = 'Panasonic'), 'TV'),
+-- ('QLED 50', (SELECT id FROM brands WHERE title = 'Philips'), 'TV'),
+-- ('Canon EOS R6', (SELECT id FROM brands WHERE title = 'Canon'), 'Camera'),
+-- ('Canon PIXMA G7020', (SELECT id FROM brands WHERE title = 'Canon'), 'Printer');
