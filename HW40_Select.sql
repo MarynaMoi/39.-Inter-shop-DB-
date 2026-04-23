@@ -1,0 +1,51 @@
+-- количество моделей каждого бренда,
+-- SELECT 
+--     brands.title,
+--     COUNT(models.id)
+-- FROM brands
+-- LEFT JOIN models ON models.brand_id = brands.id
+-- GROUP BY brands.title;
+
+-- имя покупателя, сделавшего больше всех покупок,
+-- SELECT customers.name_customers, COUNT(orders.id)
+-- FROM customers
+-- JOIN orders ON orders.customer_id = customers.id
+-- GROUP BY customers.id, customers.name_customers
+-- HAVING COUNT(orders.id) = (
+--     SELECT MAX(count_orders)
+--     FROM (
+--         SELECT COUNT(orders.id) count_orders
+--         FROM orders
+--         GROUP BY orders.customer_id
+--     )
+-- );
+
+
+--  количество товаров КАЖДОГО типа на каждом из складов,
+-- SELECT 
+--     stores.title,
+--     item_types.title,
+--     SUM(items.amount)
+-- FROM stores
+-- INNER JOIN items ON items.store_id = stores.id
+-- LEFT JOIN item_types ON item_types.id = items.type_id
+-- GROUP BY stores.title, item_types.title;
+
+
+--  имя покупателя, сделавшего самую дорогую покупку.
+-- SELECT customers.name_customers, SUM(items.price)
+-- FROM customers
+-- JOIN orders ON orders.customer_id = customers.id
+-- JOIN item_order ON item_order.order_id = orders.id
+-- JOIN items ON items.id = item_order.item_id
+-- GROUP BY customers.id, customers.name_customers, orders.id
+-- HAVING SUM(items.price) = (
+--     SELECT MAX(total_price)
+--     FROM (
+--         SELECT SUM(items.price) AS total_price
+--         FROM orders
+--         JOIN item_order ON item_order.order_id = orders.id
+--         JOIN items ON items.id = item_order.item_id
+--         GROUP BY orders.id
+--     )
+-- );

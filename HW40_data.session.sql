@@ -250,3 +250,30 @@
 --  (SELECT id FROM customers WHERE email = 'olhivna@example.com'), 1, TRUE),
 --  (23, '2025-07-27',
 --  (SELECT id FROM customers WHERE email = 'olhivna@example.com'), 1, FALSE)
+
+
+-- INSERT INTO item_order (item_id, order_id) VALUES
+-- (2,2),
+-- (3,4),
+-- (4,9),
+-- (5,3),
+-- (6,5),
+-- (7,11),
+-- (8,12),
+-- (9,13),
+-- (10,14),
+-- (11,1),
+-- (12,6),
+-- (13,8),
+-- (14,10),
+-- (15,7),
+-- (16,15),
+-- (17,16),
+-- (18,17),
+-- (19,18),
+-- (20,19),
+-- (21,20),
+-- (22,21),
+-- (23,22),
+-- (24,23);
+
